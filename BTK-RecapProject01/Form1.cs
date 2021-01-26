@@ -64,9 +64,9 @@ namespace BTK_RecapProject01
             {
                 ListProductsByCategory(Convert.ToInt32(cbxCategory.SelectedValue));
             }
-            catch ()
+            catch (Exception exception)
             {
-
+                Console.WriteLine(exception.Message);
             }
 
         }
